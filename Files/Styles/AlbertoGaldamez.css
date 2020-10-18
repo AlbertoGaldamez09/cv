@@ -1,0 +1,351 @@
+@font-face {
+  font-family: 'AlbertoGaldamez';
+  src:  url('../Fonts/AlbertoGaldamez.eot?l03dgd');
+  src:  url('../Fonts/AlbertoGaldamez.eot?l03dgd#iefix') format('embedded-opentype'),
+    url('../Fonts/AlbertoGaldamez.ttf?l03dgd') format('truetype'),
+    url('../Fonts/AlbertoGaldamez.woff?l03dgd') format('woff'),
+    url('../Fonts/AlbertoGaldamez.svg?l03dgd#AlbertoGaldamez') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'AlbertoGaldamez' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-laptop-ag:before {
+  content: "\e001";
+}
+.icon-desktop-ag:before {
+  content: "\e002";
+}
+.icon-tablet-ag:before {
+  content: "\e003";
+}
+.icon-phone-ag:before {
+  content: "\e004";
+}
+.icon-camera-ag:before {
+  content: "\e012";
+}
+.icon-toolbox-ag:before {
+  content: "\e014";
+}
+.icon-wallet-ag:before {
+  content: "\e016";
+}
+.icon-lock-ag:before {
+  content: "\e020";
+}
+.icon-megaphone-ag:before {
+  content: "\e021";
+}
+.icon-map-ag:before {
+  content: "\e025";
+}
+.icon-basket-ag:before {
+  content: "\e027";
+}
+.icon-telescope-ag:before {
+  content: "\e02a";
+}
+.icon-key-ag:before {
+  content: "\e02c";
+}
+.icon-lightbulb-ag:before {
+  content: "\e030";
+}
+.icon-pencil-ag:before {
+  content: "\e032";
+}
+.icon-tools-ag:before {
+  content: "\e034";
+}
+.icon-strategy-ag:before {
+  content: "\e03b";
+}
+.icon-heart-ag:before {
+  content: "\e04a";
+}
+.icon-trash-ag:before {
+  content: "\e900";
+}
+.icon-note-ag:before {
+  content: "\e901";
+}
+.icon-documentcode-ag:before {
+  content: "\e902";
+}
+.icon-search-ag:before {
+  content: "\e903";
+}
+.icon-printertext-ag:before {
+  content: "\e904";
+}
+.icon-download2-ag:before {
+  content: "\e905";
+}
+.icon-award-ag:before {
+  content: "\e906";
+}
+.icon-award2-ag:before {
+  content: "\e907";
+}
+.icon-sportsshoe-ag:before {
+  content: "\e908";
+}
+.icon-cloudsun-ag:before {
+  content: "\e909";
+}
+.icon-cloudsunrain-ag:before {
+  content: "\e90a";
+}
+.icon-discord-ag:before {
+  content: "\e90b";
+  color: #7289da;
+}
+.icon-telegram-ag:before {
+  content: "\e90c";
+  color: #2ca5e0;
+}
+.icon-audition-ag:before {
+  content: "\e90d";
+  color: #00e4bb;
+}
+.icon-atom-ag:before {
+  content: "\e90e";
+  color: #66595c;
+}
+.icon-linuxmint-ag:before {
+  content: "\e90f";
+  color: #87cf3e;
+}
+.icon-mastercard-ag:before {
+  content: "\e910";
+  color: #eb001b;
+}
+.icon-messenger-ag:before {
+  content: "\e911";
+  color: #00b2ff;
+}
+.icon-paypal-ag:before {
+  content: "\e912";
+  color: #00457c;
+}
+.icon-ubuntu-ag:before {
+  content: "\e913";
+  color: #e95420;
+}
+.icon-visa-ag:before {
+  content: "\e914";
+  color: #142787;
+}
+.icon-visualstudio-ag:before {
+  content: "\e915";
+  color: #5c2d91;
+}
+.icon-windows-ag:before {
+  content: "\e916";
+  color: #0078d6;
+}
+.icon-wix-ag:before {
+  content: "\e917";
+  color: #faad4d;
+}
+.icon-wordpress-ag:before {
+  content: "\e918";
+  color: #21759b;
+}
+.icon-acrobatreader-ag:before {
+  content: "\e919";
+  color: #ee3f24;
+}
+.icon-dreamweaver-ag:before {
+  content: "\e91a";
+  color: #35fa00;
+}
+.icon-illustrator-ag:before {
+  content: "\e91b";
+  color: #ff7c00;
+}
+.icon-photoshop-ag:before {
+  content: "\e91c";
+  color: #00c8ff;
+}
+.icon-premiere-ag:before {
+  content: "\e91d";
+  color: #ea77ff;
+}
+.icon-bootstrap-ag:before {
+  content: "\e91e";
+  color: #563d7c;
+}
+.icon-css-ag:before {
+  content: "\e91f";
+  color: #1572b6;
+}
+.icon-dot-net-ag:before {
+  content: "\e920";
+  color: #5c2d91;
+}
+.icon-facebook-ag:before {
+  content: "\e921";
+  color: #1877f2;
+}
+.icon-github-ag:before {
+  content: "\e922";
+}
+.icon-gmail-ag:before {
+  content: "\e923";
+  color: #d14836;
+}
+.icon-html-ag:before {
+  content: "\e924";
+  color: #e34f26;
+}
+.icon-inst-agram-ag:before {
+  content: "\e925";
+  color: #e4405f;
+}
+.icon-javascript-ag:before {
+  content: "\e926";
+  color: #f7df1e;
+}
+.icon-linkedin-ag:before {
+  content: "\e927";
+  color: #0077b5;
+}
+.icon-mega-ag:before {
+  content: "\e928";
+  color: #d9272e;
+}
+.icon-access-ag:before {
+  content: "\e929";
+  color: #ba141a;
+}
+.icon-excel-ag:before {
+  content: "\e92a";
+  color: #217346;
+}
+.icon-word-ag:before {
+  content: "\e92b";
+  color: #2b579a;
+}
+.icon-mysql-ag:before {
+  content: "\e92c";
+  color: #4479a1;
+}
+.icon-node-dot-js-ag:before {
+  content: "\e92d";
+  color: #393;
+}
+.icon-openssl-ag:before {
+  content: "\e92e";
+  color: #721412;
+}
+.icon-php-ag:before {
+  content: "\e92f";
+  color: #777bb4;
+}
+.icon-pinterest-ag:before {
+  content: "\e930";
+  color: #bd081c;
+}
+.icon-playstation-ag:before {
+  content: "\e931";
+  color: #003791;
+}
+.icon-skype-ag:before {
+  content: "\e932";
+  color: #00aff0;
+}
+.icon-spotify-ag:before {
+  content: "\e933";
+  color: #1ed760;
+}
+.icon-twitter-ag:before {
+  content: "\e934";
+  color: #1da1f2;
+}
+.icon-whatsapp-ag:before {
+  content: "\e935";
+  color: #25d366;
+}
+.icon-xbox-ag:before {
+  content: "\e936";
+  color: #107c10;
+}
+.icon-youtube-ag:before {
+  content: "\e937";
+  color: #f00;
+}
+.icon-zoom-ag:before {
+  content: "\e938";
+  color: #2d8cff;
+}
+.icon-briefcase-ag:before {
+  content: "\e9ae";
+}
+.icon-comments-ag:before {
+  content: "\e96d";
+}
+.icon-cup-ag:before {
+  content: "\e99e";
+}
+.icon-document-ag:before {
+  content: "\e939";
+}
+.icon-download-ag:before {
+  content: "\e9c7";
+}
+.icon-download21-ag:before {
+  content: "\e9c2";
+}
+.icon-equalizer-ag:before {
+  content: "\e992";
+}
+.icon-home-ag:before {
+  content: "\e93a";
+}
+.icon-login-ag:before {
+  content: "\ea13";
+}
+.icon-logout-ag:before {
+  content: "\ea14";
+}
+.icon-menu-ag:before {
+  content: "\e9bd";
+}
+.icon-microphone-ag:before {
+  content: "\e93b";
+}
+.icon-printer-ag:before {
+  content: "\e954";
+}
+.icon-spinner-ag:before {
+  content: "\e97b";
+}
+.icon-spinner2-ag:before {
+  content: "\e982";
+}
+.icon-spinner3-ag:before {
+  content: "\e983";
+}
+.icon-switch-ag:before {
+  content: "\e9b6";
+}
+.icon-user-ag:before {
+  content: "\e971";
+}
