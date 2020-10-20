@@ -14,6 +14,7 @@
 	text-decoration: none;
 	list-style: none;
 	line-height:1;
+	font-family: 'titillium-semibold',Arial,sans-serif;
 }
 
 body{
@@ -78,14 +79,14 @@ body > *{
 .main-title{
   font-size: 50px;
   color: white;
-  font-family: 'titillium-semibold',Arial,sans-serif;
+  font-family: 'titillium-semibold', Arial,sans-serif;
 }
 
 .main-subtitle{
   font-size: 15px;
   display: block;
   color: white;
-  font-family: 'titillium-semibold',Arial,sans-serif;
+  font-family: 'titillium-semibold', Arial,sans-serif;
   margin-bottom: 135px;
 }
 
@@ -177,7 +178,7 @@ body > *{
 	background-color: rgb(200, 200, 200);
 }
 
-.AboutMe{
+.ProfileContainer{
 	min-height: 90vh;
 }
 
@@ -236,4 +237,37 @@ body > *{
 
 .carousel-inner, .carousel-item{
 	height: 100%;
+}
+
+footer{
+	min-height: 100vh;
+	padding-top: 10vh;
+}
+
+.Footer{
+	padding-top: 15vh;
+}
+
+.FooterOption{
+	padding: 5vh;
+	border-top: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.FooterOption>div>p{
+	font-family: "sans-serif";
+	font-weight: normal;
+}
+
+.FooterOption>div>span{
+	font-size: 40px;
+	color: var(--LightBlue)
+}
+
+.FooterSocialMedia{
+	border-top: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.SocialMedia>div>.navbar>.nav-item>.nav-link{
+	font-family: sans-serif;
+	font-size: 15px;
 }
