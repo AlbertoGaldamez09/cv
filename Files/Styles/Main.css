@@ -61,7 +61,7 @@ body > *{
 }
 
 .teaser-container{
-  background-image: url('/Files/Images/MainBackground.jpg');
+  background-image: url('../../Files/Images/MainBackground.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
