@@ -7,5 +7,13 @@
          url('../Fonts/TitilliumWeb-SemiBold.svg#titilliumlight_upright') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../Fonts/OpenSansLight.eot');
+    src: url('../Fonts/OpenSansLight.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/OpenSansLight.woff') format('woff'),
+         url('../Fonts/OpenSansLight.ttf') format('truetype'),
+         url('../Fonts/OpenSansLight.svg#titilliumlight_upright') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }

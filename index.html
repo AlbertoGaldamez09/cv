@@ -2,6 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="Files/Images/icon.ico">
     <link rel="stylesheet" href="Files/Styles/Bootstrap.css">
     <link rel="stylesheet" href="Files/Styles/Main.css">
     <link rel="stylesheet" href="Files/Styles/Font.css">
@@ -9,7 +10,7 @@
     <title>Alberto Galdamez - Diseñador web y programador Backend</title>
   </head>
   <body>
-    <section id="home" class="home">
+    <section class="MainContainer">
       <div class="teaser-container">
         <div class="teaser-block">
           <div class="container">
@@ -23,6 +24,9 @@
               <div class="col-sm-6 print-cv">
                 <a href="#" class="btn btn-primary"><span class="icon-printer-ag"></span> &nbsp; Imprimir mi curriculum</a>
               </div>
+              <div class="col-12 d-sm-block d-md-none">
+                <br>
+              </div>
               <div class="col-sm-6 t-right">
                 <p class="main-contact">Tienes alguna pregunta? Escribeme a <a href="mailto:rudyalbertopaz77@gmail.com">rudyalbertopaz77@gmail.com</a> </p>
               </div>
@@ -31,37 +35,35 @@
         </div>
         <div class="nav-container">
           <nav class="" style="display: block;">
-            <div class="container ">
-              <div class="row">
-                <div class="mobile-menu-holder d-md-none d-lg-none d-xl-none">
-                  <a class="mobile-btn" href="#"><span class="icon-menu-ag"></span></a>
-                </div>
-              </div>
-            </div>
             <div class="NavBar">
               <div class="row">
-                <div class="col-sm-5 t-center">
+                <div class="col-5 t-center d-none d-md-inline-block d-lg-inline-block d-xl-inline-block">
                   <ul class="menu-left" style="display: block;">
                     <li class="nav-item">
-                      <a class="nav-link" href="#home">SOBRE MI &nbsp;&nbsp;<span class="icon-user-ag"></span></a>
+                      <a class="nav-link" href="#AboutMe">SOBRE MI &nbsp;&nbsp;<span class="icon-user-ag"></span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#about">ESTUDIOS &nbsp;&nbsp;<span class="icon-cup-ag"></span></a>
+                      <a class="nav-link" href="#Studies">ESTUDIOS &nbsp;&nbsp;<span class="icon-cup-ag"></span></a>
                     </li>
                   </ul>
                 </div>
-                <div class="col-sm-2 ml-0 pl-0">
+                <div class="col-8 d-sm-inline-block d-md-none d-lg-none d-xl-none">
+                <button class="btn DropdownMenu" type="button" data-toggle="collapse" data-target="#MobileMenu" aria-controls="MobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon-menu-ag"></span>
+                </button>
+                </div>
+                <div class="col-2 ml-0 pl-0 pr-0">
                   <div class="ProfilePhotoContainer">
                     <img src="Files/Images/ProfilePhoto.png" alt="" class="ProfilePhoto">
                   </div>
                 </div>
-                <div class="col-sm-5 t-center">
+                <div class="col-5 t-center d-none d-md-inline-block d-lg-inline-block d-xl-inline-block pr-0 pl-0">
                   <ul class="menu-right" style="display: block;">
                     <li class="nav-item">
-                      <a class="nav-link" href="#home">HABILIDADES &nbsp;&nbsp;<span class="icon-briefcase-ag"></span></a>
+                      <a class="nav-link" href="#Skills">HABILIDADES &nbsp;&nbsp;<span class="icon-briefcase-ag"></span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#about">EXPERIENCIA &nbsp;&nbsp;<span class="icon-equalizer-ag"></span></a>
+                      <a class="nav-link" href="#Experience">EXPERIENCIA &nbsp;&nbsp;<span class="icon-equalizer-ag"></span></a>
                     </li>
                   </ul>
                 </div>
@@ -71,7 +73,155 @@
         </div>
       </div>
     </section>
+    <section class="MobileMenuContainer">
+      <nav class="navbar navbar-expand-md d-lg-none d-xl-none d-md-none MobileMenu">
+        <div class="collapse navbar-collapse" id="MobileMenu">
+          <ul class="navbar-nav mr-auto MobileMenuList">
+            <li class="nav-item  MobileMenuListOption">
+              <a class="nav-link" href="#">SOBRE MI</a>
+            </li>
+            <li class="nav-item MobileMenuListOption">
+              <a class="nav-link" href="#">ESTUDIOS</a>
+            </li>
+            <li class="nav-item MobileMenuListOption">
+              <a class="nav-link" href="#">HABILIDADES</a>
+            </li>
+            <li class="nav-item MobileMenuListOption">
+              <a class="nav-link" href="#">EXPERIENCIA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section class="BodyContainer" id="AboutMe">
+      <div class="container AboutMe">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 Block">
+            <h2 class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Quién soy?</h2>
+            <h4 class="d-none d-sm-none d-md-none d-lg-block d-xl-none">Quién soy?</h4>
+            <h5 class="d-sm-block d-md-block d-lg-none d-xl-none">Quién soy?</h5>
+            <br>
+            <br>
+            <p class="ResumeText"><strong>Mi nombre es Alberto Galdamez, 21 años.</strong><br><br>Diseñador y desarrollador web.<br> Principalmente en el area de Backend y desarrollo de bases de datos. Con +2 años de experiencia en desarrollo web con PHP y MySQL.
+            </p>
+            <a href="#" class="btn btn-success DownloadButton"> <span class="icon-login-ag"></span>&nbsp;Portafolio </a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 Block">
+            <h2 class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Sobre Mi</h2>
+            <h4 class="d-none d-sm-none d-md-none d-lg-block d-xl-none">Sobre Mi</h4>
+            <h5 class="d-sm-block d-md-block d-lg-none d-xl-none">Sobre Mi</h5>
+            <br>
+            <br>
+            <p><strong>Fecha de Nacimiento:</strong> Agosto-19-1999</p>
+            <p><strong>Numero de Telefono:</strong> <a href="tel:+50431421439">+504 3142-1439</a></p>
+            <p><strong>E-mail:</strong>  <a target="_blank"href="mailto:rudyalbertopaz77@gmail.com">rudyalbertopaz77@gmail.com</a> </p>
+            <p><strong>Direccion:</strong>  <a target="_blank"href="https://www.google.com/maps/place/El+Caf%C3%A9+de+las+Velas/@14.7687273,-88.7812924,19z/data=!4m5!3m4!1s0x8f6409e6f856114f:0xb4cc6a24694f33f9!8m2!3d14.7687183!4d-88.7808042">Barrio El Carmen, Calle Real Centenario, 4ta Avenida, frente a Escolares y mas; Santa Rosa, Copan, Honduras.</a> </p>
+            <p><strong>Freelance:</strong> <a target="_blank"href="#">AlbertoGaldamez09</a> </p>
+            <p><strong>GitHub:</strong> <a target="_blank"href="https://github.io/AlbertoGaldamez09">AlbertoGaldamez09</a> </p>
+            <p><strong>Skype:</strong> <a target="_blank"href="skype:live:rudyalbertopaz?chat">rudyalbertopaz</a> </p>
+            <br><br>
+            <p class="text-center SocialMedia">
+              <a href="https://wa.me/50431421439"><span class="icon-whatsapp-ag"></span> </a>
+              <a href="https://www.facebook.com/AlbertoGaldamez009"><span class="icon-facebook-ag"></span> </a>
+              <a href="https://www.instagram.com/AlbertoGaldamez009"><span class="icon-instagram-ag"></span> </a>
+              <a href="https://www.twitter.com/AlbertoGaldamez009"><span class="icon-twitter-ag"></span> </a>
+              <a href="https://www.messenger.com/t/AlbertoGaldamez009"><span class="icon-messenger-ag"></span> </a>
+              <a href="https://www.pinterest.com/AlbertoGaldamez09"><span class="icon-pinterest-ag"></span> </a>
+              <a href="mailto:rudyalbertopaz77@gmail.com"><span class="icon-gmail-ag"></span> </a>
+              <a href="https://open.spotify.com/user/31j46ki4wkti46m4qzryip7uv2x4?si=u4zWsN67TkCR0wjgOM1fOw"><span class="icon-spotify-ag"></span> </a>
+              <a href="https://www.xbox.com"><span class="icon-xbox-ag"></span> </a>
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 Block" id="Skills">
+            <h2 class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Mis Habilidades</h2>
+            <h4 class="d-none d-sm-none d-md-none d-lg-block d-xl-none">Mis Habilidades</h4>
+            <h5 class="d-sm-block d-md-block d-lg-none d-xl-none">Mis Habilidades</h5>
+            <br>
+            <br>
+            <p class="ResumeText">
+              <span class="icon-mysql-ag SkillItem"></span>
+               MySQL (Base de datos - Servidor)
+              <div class="progress" style="height: 12px">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 100%; height: 12px" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+            </p>
+            <p class="ResumeText">
+              <span class="icon-php-ag SkillItem"></span>
+               PHP (Backend - Servidor)
+              <div class="progress" style="height: 12px">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 95%; height: 12px" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+              </div>
+            </p>
+            <p class="ResumeText">
+              <span class="icon-javascript-ag SkillItem"></span>
+               Javascript + JQuery (Backend - Cliente)
+              <div class="progress" style="height: 12px">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 85%; height: 12px" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+              </div>
+            </p>
+            <p class="ResumeText">
+              <span class="icon-html-ag SkillItem"></span>
+              HTML5 (Diseño)
+             <div class="progress" style="height: 12px">
+               <div class="progress-bar bg-success" role="progressbar" style="width: 100%; height: 12px" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+             </div>
+            </p>
+            <p class="ResumeText">
+              <span class="icon-css-ag SkillItem"></span>
+              CSS3 + Bootstrap (Diseño)
+             <div class="progress" style="height: 12px">
+               <div class="progress-bar bg-success" role="progressbar" style="width: 100%; height: 12px" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">100%</div>
+             </div>
+              <br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="Carousel" class="carousel slide" data-ride="carousel"data-interval="3500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h2>Un poco mas de mi.</h2>
+              <p>Soy un chico silencioso, amante de la tecnologia, tanto hardware como software, autodidacta y con una gran atencion a los detalles pequenos.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Mis aptitudes</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Mi banco de Tecnologias.</h2>
+              <p>Estoy en el mundo de la programación desde los 15 años, por eso he aprendido mucho en el camino, principalmente soy desarrollador back-end por el conjunto de tecnologías y metodologías de programación que se utilizan en esta área.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver mas</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h2>Maquetacion con y sin frameworks</h2>
+              <p>Puedo escribir y maquetar mis proyectos tanto con o sin framework, lo que me permite entregar proyectos mas rapido, o mas eficientes, dependiendo de las necesidades del cliente.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver mas</a></p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#Carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#Carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+
+    </div>
   </body>
+  <br>
   <footer>
     <script src="https://www.tiendaselzapaton.com/Files/Javascript/Jquery.js.descarga"></script>
     <script src="https://www.tiendaselzapaton.com/Files/Javascript/bootstrap.min.js"></script>

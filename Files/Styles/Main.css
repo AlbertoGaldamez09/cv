@@ -18,7 +18,7 @@
 
 body{
 	line-height:0;
-	background-color: rgba(225,225,225,1);
+	background-color: rgba(245,245,245,1);
 	background-size: auto 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -62,15 +62,15 @@ body > *{
 
 .teaser-container{
   background-image: url('/Files/Images/MainBackground.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: inherit;
-  height: 89vh
+  background-attachment: scroll;
+  height: 90vh
 }
 
 .teaser-block{
-  height: 89vh;
+  height: 90vh;
   padding-top: 135px;
   background-color: rgba(30, 31, 41, 0.7);
 }
@@ -100,15 +100,21 @@ body > *{
 .NavBar{
   background-color: rgb(255,255,255);
   max-height: 10vh;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.NavBar>.row{
+	max-width: 100%;
 }
 
 .menu-left{
   float: right;
+	overflow: hidden;
 }
 
 .menu-right{
   float: left;
+	overflow: hidden;
 }
 
 .menu-left>.nav-item, .menu-right>.nav-item{
@@ -126,6 +132,10 @@ body > *{
   color: rgb(0, 123, 255);
 }
 
+.DropdownMenu{
+	padding: 3vh;
+}
+
 .ProfilePhotoContainer{
   width: 100%;
   position: absolute;
@@ -134,7 +144,96 @@ body > *{
 
 .ProfilePhoto{
   width: 100%;
+  min-width: 120px;
   max-width: 180px;
   border-radius: 50%;
-  border: solid white 7px;
+  border: solid white 5px;
+}
+
+.MobileMenuContainer{
+	margin-top: 10vh;
+	width: 100%;
+	z-index: 1000;
+}
+
+.MobileMenu{
+	padding: 0px !important;
+}
+
+#MobileMenu{
+	background-color: white;
+}
+
+.MobileMenuList{
+	padding: 8px 16px !important;
+}
+
+.MobileMenuList>.MobileMenuListOption>a{
+	color: rgb(30, 40, 50);
+	padding: 2vh !important;
+}
+
+.MobileMenuList>.MobileMenuListOption>a:hover{
+	background-color: rgb(200, 200, 200);
+}
+
+.AboutMe{
+	min-height: 90vh;
+}
+
+.Block{
+	padding-top: 10vh;
+}
+
+.Block>*{
+	font-family: "OpenSansLight",Arial,sans-serif;
+}
+
+.ResumeText{
+	line-height: 1.5 !important;
+	margin-bottom: 5px !important;
+	margin-top: 5px !important;
+}
+
+.SkillItem{
+	font-size: 20px;
+	margin-right: 15px;
+	margin-bottom: 5px;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.DownloadButton{
+	border-radius: 15px;
+}
+
+.DownloadButton>span{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.SocialMedia{
+	font-size: 20px;
+}
+
+.SocialMedia>a:hover{
+	text-decoration: none;
+}
+
+#Carousel{
+	height: 50vh;
+	min-height: 50vh;
+	background: url('../../Files/Images/Carousel1Background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.carousel-inner{
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-inner, .carousel-item{
+	height: 100%;
 }
