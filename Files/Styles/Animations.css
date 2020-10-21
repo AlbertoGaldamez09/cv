@@ -1,0 +1,127 @@
+@keyframes HTML{
+	0%{ width: 0%;}
+	100%{ width: 100%;}
+}
+
+@keyframes CSS{
+	0%{	width: 0%;}
+	100%{	width: 100%;}
+}
+
+@keyframes PHP{
+	0%{ width: 0%;}
+	100%{ width: 90%;}
+}
+
+@keyframes MySQL{
+	0%{ width: 0%;}
+	100%{ width: 85%;}
+}
+
+@keyframes Javascript{
+	0%{ width: 0%;}
+	100%{ width: 60%;}
+}
+
+@keyframes JQuery{
+	0%{ width: 0%;}
+	100%{ width: 45%;}
+}
+
+@keyframes CSharp{
+	0%{ width: 0%;}
+	100%{ width: 15%;}
+}
+
+@keyframes VisualStudio{
+	0%{ width: 0%;}
+	100%{ width: 100%;}
+}
+
+@keyframes Atom{
+	0%{ width: 0%;}
+	100%{ width: 100%;}
+}
+
+@keyframes Adobe{
+	0%{ width: 0%;}
+	100%{ width: 60%;}
+}
+
+@keyframes Audition{
+	0%{ width: 0%;}
+	100%{ width: 85%;}
+}
+
+@keyframes TeamWork{
+	0%{ width: 0%;}
+	100%{ width: 65%;}
+}
+
+@keyframes Punctual{
+	0%{ width: 0%;}
+	100%{ width: 95%;}
+}
+
+@keyframes Comunication{
+	0%{ width: 0%;}
+	100%{ width: 55%;}
+}
+
+@keyframes Leadership{
+	0%{ width: 0%;}
+	100%{ width: 50%;}
+}
+
+@keyframes Autodidact{
+	0%{ width: 0%;}
+	100%{ width: 100%;}
+}
+
+@keyframes Logic{
+	0%{ width: 0%;}
+	100%{ width: 95%;}
+}
+
+@keyframes Initiative{
+	0%{ width: 0%;}
+	100%{ width: 90%;}
+}
+
+@keyframes Spanish{
+	0%{ width: 0%;}
+	100%{ width: 100%;}
+}
+
+@keyframes English{
+	0%{ width: 0%;}
+	100%{ width: 85%;}
+}
+
+@keyframes German{
+	0%{ width: 0%;}
+	100%{ width: 15%;}
+}
+
+@keyframes Networks{
+	0%{ width: 0%;}
+	100%{ width: 60%;}
+}
+
+@keyframes Databases{
+	0%{ width: 0%;}
+	100%{ width: 90%;}
+}
+
+@keyframes FadeOut{
+  0%{ opacity: 100; width: 100%; height: 100vh}
+  80%{ opacity: 50;}
+  99%{ width: 100%; height: 100vh}
+  100%{ opacity: 0; width: 0px; height: 0px;}
+}
+
+@keyframes loading {
+  50%{
+    height: 45px;
+  }
+}

@@ -2,7 +2,6 @@
     font-family: 'titillium-semibold';
     src: url('../Fonts/TitilliumWeb-SemiBold.eot');
     src: url('../Fonts/TitilliumWeb-SemiBold.eot?#iefix') format('embedded-opentype'),
-         url('../Fonts/TitilliumWeb-SemiBold.woff') format('woff'),
          url('../Fonts/TitilliumWeb-SemiBold.ttf') format('truetype'),
          url('../Fonts/TitilliumWeb-SemiBold.svg#titilliumlight_upright') format('svg');
     font-weight: normal;

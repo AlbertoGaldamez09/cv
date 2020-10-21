@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
 :root{
 	--PrimaryNavy: rgb(21,22,29);
 	--SecondaryNavy: rgba(30, 31, 41, 1);
 	--Green: rgb(35,164,85);
 	--Orange: rgb(242,85,42);
-	--LightBlue: rgb(88,135,245);
+	--LightBlue: rgb(70,125,255);
 	--White: rgb(255,255,255);
 }
 
@@ -61,6 +63,65 @@ body > *{
 	line-height:1;
 }
 
+.LoadingContainer{
+	background-color: rgb(25,25,25);
+	color:  rgba(175, 175, 175, 1);
+	width: 0px;
+	height: 0px;
+	padding-top: 50vh;
+	text-align: center;
+	letter-spacing: normal;
+	position: fixed;
+	z-index: 1002;
+	animation: FadeOut 2.5s;
+	opacity: 0;
+}
+
+.Loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(75deg);
+  width: 15px;
+  height: 15px;
+}
+
+.Loading::before,.Loading::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  animation: loading 1.5s infinite linear;
+}
+
+.Loading::before{
+  box-shadow: 15px 15px #e77f67, -15px -15px #778beb;
+}
+
+.Loading::after{
+  box-shadow: 15px 15px #f8a5c2, -15px -15px #f5cd79;
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.ProgresBar{
+	margin-top: 3vh;
+	margin-left: 33.33%;
+	width: 33.33%;
+	height: 3px;
+	background-color: rgba(50, 150, 50, 1);
+}
+
+.ProgresBarLoading{
+	width: 75%;
+	height: 3px;
+	background-color: rgba(0, 100, 0, 1);
+	animation: Logic 2s;
+}
+
 .teaser-container{
   background-image: url('../../Files/Images/MainBackground.jpg');
   background-size: cover;
@@ -78,14 +139,14 @@ body > *{
 
 .main-title{
   font-size: 50px;
-  color: white;
+  color: var(--White);
   font-family: 'titillium-semibold', Arial,sans-serif;
 }
 
 .main-subtitle{
   font-size: 15px;
   display: block;
-  color: white;
+  color: var(--White);
   font-family: 'titillium-semibold', Arial,sans-serif;
   margin-bottom: 135px;
 }
@@ -95,7 +156,7 @@ body > *{
 }
 
 .main-contact{
-  color: white;
+  color: var(--White);
 }
 
 .NavBar{
@@ -141,6 +202,7 @@ body > *{
   width: 100%;
   position: absolute;
   top: -60px;
+	z-index: 300;
 }
 
 .ProfilePhoto{
@@ -148,7 +210,7 @@ body > *{
   min-width: 120px;
   max-width: 180px;
   border-radius: 50%;
-  border: solid white 5px;
+  border: solid var(--White) 5px;
 }
 
 .MobileMenuContainer{
@@ -162,7 +224,7 @@ body > *{
 }
 
 #MobileMenu{
-	background-color: white;
+	background-color: var(--White);
 }
 
 .MobileMenuList{
@@ -178,52 +240,207 @@ body > *{
 	background-color: rgb(200, 200, 200);
 }
 
-.ProfileContainer{
+.BodyContainer{
 	min-height: 90vh;
-}
-
-.Block{
 	padding-top: 10vh;
 }
 
-.Block>*{
-	font-family: "OpenSansLight",Arial,sans-serif;
-}
-
-.ResumeText{
-	line-height: 1.5 !important;
-	margin-bottom: 5px !important;
-	margin-top: 5px !important;
-}
-
-.SkillItem{
-	font-size: 20px;
-	margin-right: 15px;
-	margin-bottom: 5px;
-	padding: 5px;
-	border-radius: 10px;
-	background-color: rgba(0, 0, 0, 0.1);
-}
-
-.DownloadButton{
-	border-radius: 15px;
-}
-
-.DownloadButton>span{
-	font-weight: bold;
-	font-size: 15px;
+#AboutMe{
+	background-color: var(--White);
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	padding-bottom: 5vh;
+	padding-top: 5vh;
 }
 
 .SocialMedia{
-	font-size: 20px;
+	padding-top: 2.5vh;
+	padding-left: 25%;
+	padding-right: 25%;
 }
 
-.SocialMedia>a:hover{
-	text-decoration: none;
+#AboutMe>h3{
+	padding-top: 2.5vh;
+}
+
+#AboutMe>p{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.SocialMedia>.navbar>.nav-item>.nav-link{
+	width: 100%;
+	text-align: center;
+}
+
+#Skills{
+	margin: 0px;
+	padding: 0px;
+}
+
+.SkillsContainer{
+	background-color: var(--LightBlue);
+	padding-bottom: 2vh;
+}
+
+.SkillsContainer>*{
+	color: var(--White);
+	padding: 1.5vh;
+}
+
+.SkillProgress{
+	display: block;
+	background-color: rgba(255,255,255,0.1);
+	height: 4px;
+	margin-top: 2vh;
+	overflow: hidden;
+}
+
+.SkillProgressBar{
+	height: 4px;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 4px;
+}
+
+.SkillProgressBarHTML{
+	width: 100%;
+	animation-name: HTML !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarCSS{
+	width: 100%;
+	animation-name: CSS !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarPHP{
+	width: 90%;
+	animation-name: PHP !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarMySQL{
+	width: 85%;
+	animation-name: MySQL !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarJavascript{
+	width: 60%;
+	animation-name: Javascript !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarJquery{
+	width: 45%;
+	animation-name: JQuery !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarCSharp{
+	width: 15%;
+	animation-name: CSharp !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarVisualStudio{
+	width: 100%;
+	animation-name: VisualStudio !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarAtom{
+	width: 100%;
+	animation-name: Atom !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarAdobe{
+	width: 60%;
+	animation-name: Adobe !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarAudition{
+	width: 85%;
+	animation-name: Audition !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarTeamWork{
+	width: 65%;
+	animation-name: TeamWork !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarComunication{
+	width: 55%;
+	animation-name: Comunication !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarPunctual{
+	width: 95%;
+	animation-name: Punctual !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarLeadership{
+	width: 50%;
+	animation-name: Leadership !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarAutoDidact{
+	width: 100%;
+	animation-name: Autodidact !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarLogic{
+	width: 95%;
+	animation-name: Logic !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarinitiative{
+	width: 90%;
+	animation-name: Initiative !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarSpanish{
+	width: 100%;
+	animation-name: Spanish !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarEnglish{
+	width: 85%;
+	animation-name: English !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarGerman{
+	width: 15%;
+	animation-name: German !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarNetworks{
+	width: 60%;
+	animation-name: Networks !important;
+	animation-duration: 2.5s !important;
+}
+
+.SkillProgressBarDatabases{
+	width: 90%;
+	animation-name: Databases !important;
+	animation-duration: 2.5s !important;
 }
 
 #Carousel{
-	height: 50vh;
+	height: 60vh;
 	min-height: 50vh;
 	background: url('../../Files/Images/Carousel1Background.jpg');
 	background-size: cover;
@@ -239,6 +456,34 @@ body > *{
 	height: 100%;
 }
 
+.PrimaryButton{
+	background-color: var(--LightBlue);
+	color: var(--White)
+}
+
+.Card{
+	border: solid 1px rgba(150, 150, 255, 0.75);
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+.StudyItemContainer{
+	margin-left: 3vh;
+	border-left: solid 1px  rgba(150, 150, 255, 0.75);
+}
+
+.StudyItem{
+	padding-left: 2vh;
+	padding-right: 2vh;
+	border-left-style: dotted;
+	border-color: rgba(150, 150, 255);
+}
+
+.StudyItem>span, .StudyItem>p{
+	font-family: sans-serif !important;
+	font-weight: normal !important;
+}
+
 footer{
 	min-height: 100vh;
 	padding-top: 10vh;
@@ -249,8 +494,12 @@ footer{
 }
 
 .FooterOption{
-	padding: 5vh;
-	border-top: solid 1px rgba(0, 0, 0, 0.2);
+	padding: 4vh;
+	border-top: solid 1px rgba(150, 150, 255, 0.75);
+}
+
+.FooterOption>.col-3{
+	padding: 0px;
 }
 
 .FooterOption>div>p{
@@ -264,7 +513,7 @@ footer{
 }
 
 .FooterSocialMedia{
-	border-top: solid 1px rgba(0, 0, 0, 0.2);
+border-top: solid 1px rgba(150, 150, 255, 0.75);
 }
 
 .SocialMedia>div>.navbar>.nav-item>.nav-link{
