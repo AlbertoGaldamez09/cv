@@ -5,11 +5,15 @@
     <link rel="icon" href="Files/Images/icon.ico">
     <link rel="stylesheet" href="Files/Styles/Bootstrap.css">
     <link rel="stylesheet" href="Files/Styles/Main.css">
+    <link rel="stylesheet" href="Files/Styles/Animations.css">
     <link rel="stylesheet" href="Files/Styles/Font.css">
     <link rel="stylesheet" href="Files/Styles/AlbertoGaldamez.css">
     <title>Alberto Galdamez - Diseñador web y programador Backend</title>
   </head>
   <body>
+    <section class="LoadingContainer">
+      <div class="Loading"></div>
+    </section>
     <section class="MainContainer">
       <div class="teaser-container">
         <div class="teaser-block">
@@ -96,198 +100,293 @@
         </div>
       </nav>
     </section>
+    <section class="CarouselContainer">
+      <div id="Carousel" class="carousel slide" data-ride="carousel"data-interval="6000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h2>Un poco mas de mi.</h2>
+                <p>Soy un chico silencioso, amante de la tecnologia, tanto hardware como software, autodidacta y con una gran atencion a los detalles pequenos.</p>
+                <p><a class="btn btn-lg PrimaryButton" href="#" role="button">Mis aptitudes</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption">
+                <h2>Mi banco de Tecnologias.</h2>
+                <p>Estoy en el mundo de la programación desde los 15 años, por eso he aprendido mucho en el camino, principalmente soy desarrollador back-end por el conjunto de tecnologías y metodologías de programación que se utilizan en esta área.</p>
+                <p><a class="btn btn-lg PrimaryButton" href="#" role="button">Ver mas</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h2>Maquetacion con y sin frameworks</h2>
+                <p>Puedo escribir y maquetar mis proyectos tanto con o sin framework, lo que me permite entregar proyectos mas rapido, o mas eficientes, dependiendo de las necesidades del cliente.</p>
+                <p><a class="btn btn-lg PrimaryButton" href="#" role="button">Ver mas</a></p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#Carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#Carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
     <section class="BodyContainer">
-      <div class="container ProfileContainer">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 Block" id="WhoIAm">
-            <h2 class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Quién soy?</h2>
-            <h4 class="d-none d-sm-none d-md-none d-lg-block d-xl-none">Quién soy?</h4>
-            <h5 class="d-sm-block d-md-block d-lg-none d-xl-none">Quién soy?</h5>
-            <br>
-            <br>
-            <p class="ResumeText"><strong>Mi nombre es Alberto Galdamez, 21 años.</strong><br><br>Diseñador y desarrollador web.<br> Principalmente en el area de Backend y desarrollo de bases de datos. Con +2 años de experiencia en desarrollo web con PHP y MySQL.</p>
-            <br>
-            <a href="AboutMe.html" class="btn btn-success DownloadButton"> <span class="icon-login-ag"></span>&nbsp;MAS SOBRE MI </a>
+          <h3 class="col-12 text-center mb-4 mt-3">SOBRE MI</h3>
+          <div class="col-12" id="AboutMe">
+            <p class="text-justify">Me apasiona la tecnologia desde que era un nino, tengo talento nato en la solucion eficaz y eficiente de los problemas tanto cotidianos como informaticos con los que me encuentro, aprendo con mucha facilidad y me mantengo actualizado en lo que a mi area respecta, me gusta retarme a mi mismo y aprender de mis errores. <br>
+            <br>Tambien soy amante de los videojuegos, los perros, la musica electronica y clasica. Tambien me gusta cocinar, salir a caminar solo o bien acompanado. Anhelo estudiar <b>ingenieria en Sistemas</b> y espero poder entrar en el primer periodo academico 2021 de la Universidad Nacional Autonoma de Honduras</p>
+            <div class="SocialMedia">
+              <ul class="navbar">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><span class="icon-whatsapp-ag"></span> &nbsp;<span class="d-none d-lg-block d-xl-block">WHATSAPP</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><span class="icon-facebook-ag"></span> &nbsp;<span class="d-none d-lg-block d-xl-block">FACEBOOK</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><span class="icon-instagram-ag"></span> &nbsp;<span class="d-none d-lg-block d-xl-block">INSTAGRAM</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link d-none d-md-block d-lg-block d-xl-block"><span class="icon-gmail-ag"></span> &nbsp;<span class="d-none d-lg-block d-xl-block">E-MAIL</span></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 Block" id="AboutMe">
-            <h2 class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Sobre Mi</h2>
-            <h4 class="d-none d-sm-none d-md-none d-lg-block d-xl-none">Sobre Mi</h4>
-            <h5 class="d-sm-block d-md-block d-lg-none d-xl-none">Sobre Mi</h5>
-            <br>
-            <br>
-            <p><strong>Fecha de Nacimiento:</strong> Agosto-19-1999</p>
-            <p><strong>Numero de Telefono:</strong> <a href="tel:+50431421439">+504 3142-1439</a></p>
-            <p><strong>E-mail:</strong>  <a target="_blank"href="mailto:rudyalbertopaz77@gmail.com">rudyalbertopaz77@gmail.com</a> </p>
-            <p><strong>Direccion:</strong>  <a target="_blank"href="https://www.google.com/maps/place/El+Caf%C3%A9+de+las+Velas/@14.7687273,-88.7812924,19z/data=!4m5!3m4!1s0x8f6409e6f856114f:0xb4cc6a24694f33f9!8m2!3d14.7687183!4d-88.7808042">Barrio El Carmen, Calle Real Centenario, 4ta Avenida, frente a Escolares y mas; Santa Rosa, Copan, Honduras.</a> </p>
-            <p><strong>Freelance:</strong> <a target="_blank"href="#">AlbertoGaldamez09</a> </p>
-            <p><strong>GitHub:</strong> <a target="_blank"href="https://github.io/AlbertoGaldamez09">AlbertoGaldamez09</a> </p>
-            <p><strong>Skype:</strong> <a target="_blank"href="skype:live:rudyalbertopaz?chat">rudyalbertopaz</a> </p>
-            <br><br>
-            <p class="text-center SocialMedia">
-              <a href="https://wa.me/50431421439"><span class="icon-whatsapp-ag"></span> </a>
-              <a href="https://www.facebook.com/AlbertoGaldamez009"><span class="icon-facebook-ag"></span> </a>
-              <a href="https://www.instagram.com/AlbertoGaldamez009"><span class="icon-instagram-ag"></span> </a>
-              <a href="https://www.twitter.com/AlbertoGaldamez009"><span class="icon-twitter-ag"></span> </a>
-              <a href="https://www.messenger.com/t/AlbertoGaldamez009"><span class="icon-messenger-ag"></span> </a>
-              <a href="https://www.pinterest.com/AlbertoGaldamez09"><span class="icon-pinterest-ag"></span> </a>
-              <a href="mailto:rudyalbertopaz77@gmail.com"><span class="icon-gmail-ag"></span> </a>
-              <a href="https://open.spotify.com/user/31j46ki4wkti46m4qzryip7uv2x4?si=u4zWsN67TkCR0wjgOM1fOw"><span class="icon-spotify-ag"></span> </a>
-              <a href="https://www.xbox.com"><span class="icon-xbox-ag"></span> </a>
-            </p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 Block" id="Skills">
-            <h2 class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Mis Habilidades</h2>
-            <h4 class="d-none d-sm-none d-md-none d-lg-block d-xl-none">Mis Habilidades</h4>
-            <h5 class="d-sm-block d-md-block d-lg-none d-xl-none">Mis Habilidades</h5>
-            <br>
-            <br>
-            <p class="ResumeText">
-              <span class="icon-mysql-ag SkillItem"></span>
-               MySQL (Base de datos - Servidor)
-              <div class="progress" style="height: 12px">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 100%; height: 12px" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-              </div>
-            </p>
-            <p class="ResumeText">
-              <span class="icon-php-ag SkillItem"></span>
-               PHP (Backend - Servidor)
-              <div class="progress" style="height: 12px">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 95%; height: 12px" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-              </div>
-            </p>
-            <p class="ResumeText">
-              <span class="icon-javascript-ag SkillItem"></span>
-               Javascript + JQuery (Backend - Cliente)
-              <div class="progress" style="height: 12px">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 85%; height: 12px" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-              </div>
-            </p>
-            <p class="ResumeText">
-              <span class="icon-html-ag SkillItem"></span>
-              HTML5 (Diseño)
-             <div class="progress" style="height: 12px">
-               <div class="progress-bar bg-success" role="progressbar" style="width: 100%; height: 12px" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-             </div>
-            </p>
-            <p class="ResumeText">
-              <span class="icon-css-ag SkillItem"></span>
-              CSS3 + Bootstrap (Diseño)
-             <div class="progress" style="height: 12px">
-               <div class="progress-bar bg-success" role="progressbar" style="width: 100%; height: 12px" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">100%</div>
-             </div>
-              <br><br>
-            </p>
+          <div class="col-12 row" id="Skills">
+            <h3 class="col-12 text-center mb-4 mt-5">HABILIDADES</h3>
+            <ul class="col-sm-12 col-md-6 col-lg-3 col-xl-3 SkillsContainer">
+              <li class="SkillItem">
+                <h4>LENGUAJES</h4>
+              </li>
+              <li class="SkillItem">
+                <span>HTML5</span><span class="float-right">100%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarHTML">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>CSS3</span><span class="float-right">100%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarCSS">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>PHP</span><span class="float-right">90%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarPHP">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Javascript</span><span class="float-right">60%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarJavascript">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>JQuery</span><span class="float-right">45%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarJquery">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>C#</span><span class="float-right">15%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarCSharp">
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="col-sm-12 col-md-6 col-lg-3 col-xl-3 SkillsContainer">
+              <li class="SkillItem">
+                <h4>SOFTWARE</h4>
+              </li>
+              <li class="SkillItem">
+                <span>Visual Studio</span><span class="float-right">100%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarVisualStudio">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Atom</span><span class="float-right">100%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarAtom">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Photoshop + Illustrator</span><span class="float-right">60%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarAdobe">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Audition</span><span class="float-right">85%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarAudition">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Paquete de Office</span><span class="float-right">100%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarJquery">
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="col-sm-12 col-md-6 col-lg-3 col-xl-3 SkillsContainer">
+              <li class="SkillItem">
+                <h4>PERSONALES</h4>
+              </li>
+              <li class="SkillItem">
+                <span>Trabajo en equipo</span><span class="float-right">65%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarTeamWork">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Comunicacion</span><span class="float-right">55%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarComunication">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Puntualidad</span><span class="float-right">95%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarPHP">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Liderazgo</span><span class="float-right">50%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarLeadership">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Autodidacta</span><span class="float-right">100%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarAutoDidact">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Logica</span><span class="float-right">95%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarLogic">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Iniciativa</span><span class="float-right">90%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarinitiative">
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="col-sm-12 col-md-6 col-lg-3 col-xl-3 SkillsContainer">
+              <li class="SkillItem">
+                <h4>IDIOMAS</h4>
+              </li>
+              <li class="SkillItem">
+                <span>Espanol (Nativo)</span><span class="float-right">100%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarSpanish">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Ingles</span><span class="float-right">85%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarEnglish">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Aleman</span><span class="float-right">15%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarGerman">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <h4>OTROS</h4>
+              </li>
+              <li class="SkillItem">
+                <span>Redes</span><span class="float-right">60%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarNetworks">
+
+                  </div>
+                </div>
+              </li>
+              <li class="SkillItem">
+                <span>Bases de Datos (MySQL)</span><span class="float-right">90%</span>
+                <div class="SkillProgress">
+                  <div class="SkillProgressBar SkillProgressBarDatabases">
+
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <div id="Carousel" class="carousel slide" data-ride="carousel"data-interval="6000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="carousel-caption text-right">
-              <h2>Un poco mas de mi.</h2>
-              <p>Soy un chico silencioso, amante de la tecnologia, tanto hardware como software, autodidacta y con una gran atencion a los detalles pequenos.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Mis aptitudes</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="carousel-caption">
-              <h2>Mi banco de Tecnologias.</h2>
-              <p>Estoy en el mundo de la programación desde los 15 años, por eso he aprendido mucho en el camino, principalmente soy desarrollador back-end por el conjunto de tecnologías y metodologías de programación que se utilizan en esta área.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver mas</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <h2>Maquetacion con y sin frameworks</h2>
-              <p>Puedo escribir y maquetar mis proyectos tanto con o sin framework, lo que me permite entregar proyectos mas rapido, o mas eficientes, dependiendo de las necesidades del cliente.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver mas</a></p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#Carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#Carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-    <div class="row">
+    <section class="Expertice MasonryContainer" id="ExperticeContainer">
+      <ul class="Masonry">
 
-    </div>
+      </ul>
+    </section>
   </body>
-  <br>
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-          <div class="row FooterOption">
-            <div class="col-3">
-              <span class="icon-phone-ag"></span>
-            </div>
-            <div class="col-9">
-              <h4>Llamame:</h4>
-              <p><a href="tel:50431421439">+504 3142-1439</a> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-          <div class="row FooterOption">
-            <div class="col-3 col-md-2">
-              <span class="icon-tools-ag"></span>
-            </div>
-            <div class="col-9 col-md-10">
-              <h4>Horario</h4>
-              <p><strong>Lunes a Viernes:</strong> 08:00-18:00</p>
-              <p><strong>Sabado y Domingo:</strong> 10:00-16:00</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-          <div class="row FooterOption">
-            <div class="col-3">
-              <span class="icon-map-ag"></span>
-            </div>
-            <div class="col-9">
-              <h4>Direccion</h4>
-              <p>Barrio el Carmen, Calle Real Centenario, 4ta avenida, Santa Rosa de Copan, Frente a Escolares y mas </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="FooterSocialMedia row">
-            <div class="col-6">
-              <ul class="navbar text-center">
-                <li class="nav-item"><a href="#" class="nav-link"><span class="icon-whatsapp-ag"></span>Whatsapp</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="icon-twitter-ag"></span>Twitter</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="icon-facebook-ag"></span>Facebook</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="icon-instagram-ag"></span>Instagram</a></li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <ul class="navbar text-center">
-                <li class="nav-item"><a href="#" class="nav-link"><span class="icon-youtube-ag"></span> Youtube</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="icon-skype-ag"></span> Skype</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="icon-linkedin-ag"></span> Linkedin</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><span class="icon-github-ag"></span> Github</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <p class="text-center Footer">© 2020 all rights reserved. A product of <a href="index.html">AlbertoGaldamez09</a></p>
-        </div>
-      </div>
-    </div>
-    <script src="https://www.tiendaselzapaton.com/Files/Javascript/Jquery.js.descarga"></script>
-    <script src="https://www.tiendaselzapaton.com/Files/Javascript/bootstrap.min.js"></script>
+    <script src="Files/Scripts/Jquery.js"></script>
+    <script src="Files/Scripts/bootstrap.min.js"></script>
+    <script src="Files/Scripts/AlbertoGaldamez.js"></script>
   </footer>
 </html>
