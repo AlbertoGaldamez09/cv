@@ -6,12 +6,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1101;
-  opacity:1;
   font-family: "montserrat",sans-serif;
 }
 
 .loading{
+  z-index: 1101;
+  opacity:1;
   width: 200px;
   height: 200px;
   box-sizing: border-box;
